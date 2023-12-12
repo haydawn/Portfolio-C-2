@@ -74,11 +74,13 @@
 
 
 /* Main Section */
-body {
+
+body, html {
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
-  font-family: helvetica;
-  line-height: 1.5;
+  overflow-x: hidden; 
 }
 
 html {
@@ -94,6 +96,7 @@ h6 {
   margin: 0;
   font-size: 50px;
   color: #000;
+  text-align: center;
 }
 
 p {
@@ -109,28 +112,27 @@ p {
 
 
 /* About Section */
+
 #about {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "about copy";
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 
-
 /* Work Section */
+
 #work {
   display: grid;
   margin: 0%;
-  padding-top: 100px;
+  padding-top: 0px;
   grid-template-rows: 300px 200px 200px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "work beauty beauty" "work fashion home" "work jewellery weddings";
 }
 
-.page-section {
-  grid-template-areas: 'Beauty Fashion Home Jewellery Weddings';
-}
 
 .categoryGridArea {
   background-position: center;
@@ -192,16 +194,12 @@ p {
 
 
 /* Contact Section */
-#contact {
-  display: grid;
-  margin: 0%;
-  padding-top: 100px;
-}
 
 #contact {
   display: grid;
   grid-template-columns: 1fr 2fr;
   padding-top: 60px;
+  margin: 0%;
 }
 
 #contactNav {
@@ -247,21 +245,61 @@ nav a:hover {
 
 
 /* Media Query for Mobile */
-@media screen and (max-width: 768px) {
-  main {
-    display: flex;
+@media screen and (max-width: 520px) {
+  body {
+    overflow-x: hidden; /* Adjust overflow for smaller screens */
+  }
+
+  #navBar {
     flex-direction: column;
+    align-items: flex-start;
   }
 
-  #work {
-    grid-template-rows: auto;
-    grid-template-columns: 1fr;
+  #navLinks {
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
   }
 
-  #work div {
-    grid-area: unset;
+  #navLinks a {
+    margin: 0 10px;
+  }
+
+  .hero-banner {
+    text-align: center;
+    padding: 40px;
+  }
+
+  .hero-banner h2 {
+    position: static;
+    font-size: 25px;
+    margin: 10px 0;
+  }
+
+  #about,
+  #work,
+  #contact {
+    padding-top: 30px;
+    display: block;
+  }
+
+  .categoryGridArea,
+  #about,
+  #contact {
+    width: 100%;
+    margin: 5px 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #work .heading,
+  #about .heading,
+  #contact .heading {
+    text-align: left;
   }
 }
+
 
 
 

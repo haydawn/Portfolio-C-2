@@ -6,7 +6,7 @@ I have been tasked with creating a portfolio website to showcase my skills.
 
 ## Portfolio Image
 
-(Assets/portfolioimage.png)
+![](Assets/portfolioscreenshot.png)
 
 
 ## How I approached this Project
