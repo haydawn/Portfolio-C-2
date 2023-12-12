@@ -1,12 +1,12 @@
 # Portfolio Page
 
 ## Description 
-I have been tased with creating a portfolio website to showcase my skills.
+I have been tasked with creating a portfolio website to showcase my skills.
 
 
 ## Portfolio Image
 
-![Sample 1](images/ Screenshot 2023-12-08 132907.png)
+(Assets/portfolioimage.png)
 
 
 ## How I approached this Project
@@ -33,9 +33,13 @@ Refer to
 * (https://www.pexels.com/)
 * (https://unsplash.com/)
 
+### General
+* (https://www.w3schools.com/cssref/css3_pr_overflow-x.php) 
+* ( https://www.fluid-type-scale.com/) 
+
 
 ## Deployed Project Link 
-You can view the optimised website via this link - (         )
+You can view my Portfolio website via this link - (https://hwilson-hub.github.io/Portfolio-C-2/         )
 
 
 ## License
